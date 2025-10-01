@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/book-call/page": "app/book-call/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/ai-email-personalization/page": "app/blog/ai-email-personalization/page.js",
+  "/ai-web-design/page": "app/ai-web-design/page.js"
+}
