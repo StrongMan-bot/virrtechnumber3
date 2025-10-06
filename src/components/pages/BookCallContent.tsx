@@ -88,7 +88,7 @@ const BookCall: React.FC = () => {
             <div className="bg-background-light p-8 rounded-lg border border-gray-800 h-[800px]">
               <div
                 className="calendly-inline-widget"
-                data-url="https://calendly.com/rangingongo/ai-automation-meeting"
+                data-url="https://calendly.com/ranginov-mn-virrtech/outreach-automation"
                 style={{ minWidth: '320px', height: '700px' }}
               ></div>
             </div>
