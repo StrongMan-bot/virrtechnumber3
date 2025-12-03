@@ -79,6 +79,33 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  'name': 'VIRRTECH',
+                  'alternateName': 'VIRRTECH',
+                  'url': 'https://virrtech.com',
+                  'logo': 'https://virrtech.com/favicon.png'
+                },
+                {
+                  '@type': 'WebSite',
+                  'name': 'VIRRTECH',
+                  'url': 'https://virrtech.com',
+                  'potentialAction': {
+                    '@type': 'SearchAction',
+                    'target': 'https://virrtech.com/search?q={search_term_string}',
+                    'query-input': 'required name=search_term_string'
+                  }
+                }
+              ]
+            })
+          }}
+        />
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(d, t) {

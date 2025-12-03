@@ -19,8 +19,35 @@ export const metadata: Metadata = {
 };
 
 export default function AIAgentPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        'name': 'VIRRTECH',
+        'alternateName': 'VIRRTECH',
+        'url': 'https://virrtech.com',
+        'logo': 'https://virrtech.com/favicon.png'
+      },
+      {
+        '@type': 'WebSite',
+        'name': 'VIRRTECH',
+        'url': 'https://virrtech.com',
+        'potentialAction': {
+          '@type': 'SearchAction',
+          'target': 'https://virrtech.com/search?q={search_term_string}',
+          'query-input': 'required name=search_term_string'
+        }
+      }
+    ]
+  };
+
   return (
     <div className="bg-background-dark text-white min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
       <AIAgentContent />
       <Footer />
