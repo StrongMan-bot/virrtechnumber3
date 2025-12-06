@@ -11,10 +11,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/email-marketing/page": [
+    "/ai-phone-caller/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/email-marketing/page.js"
+      "static/chunks/app/ai-phone-caller/page.js"
+    ],
+    "/ai-web-design/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ai-web-design/page.js"
     ]
   }
 }

@@ -78,6 +78,8 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="application-name" content="VIRRTECH" />
+        <meta name="apple-mobile-web-app-title" content="VIRRTECH" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -94,6 +96,7 @@ export default function RootLayout({
                 {
                   '@type': 'WebSite',
                   'name': 'VIRRTECH',
+                  'alternateName': 'VIRRTECH',
                   'url': 'https://virrtech.com',
                   'potentialAction': {
                     '@type': 'SearchAction',
